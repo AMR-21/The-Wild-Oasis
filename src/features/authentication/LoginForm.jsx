@@ -10,8 +10,8 @@ import SpinnerMini from "../../ui/SpinnerMini";
 import { getCurrentUser } from "../../services/apiAuth";
 
 function LoginForm() {
-  const [email, setEmail] = useState("amrlfc2001@gmail.com");
-  const [password, setPassword] = useState("testabcd");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const { login, isLoading } = useLogin();
   const { isAuthenticated, isLoading: isLoadingUser } = useUser();
